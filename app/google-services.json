@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800398484772",
+    "project_id": "phonic-smart-d5907",
+    "storage_bucket": "phonic-smart-d5907.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800398484772:android:693d3c0951500cf1ec3fb1",
+        "android_client_info": {
+          "package_name": "com.ishaan.ishaanphonicsmartapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800398484772-b9h67iv8peoo1rqaatkvd0c63srhdmgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa2hfkEsPmdy2_gDDH3N1WE73cfIVZmwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800398484772-b9h67iv8peoo1rqaatkvd0c63srhdmgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

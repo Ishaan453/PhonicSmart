@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ace5ee"
+    tools:context=".ResetPass">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brawler"
+            android:text="Reset Password"
+            android:textColor="#FF8C00"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/brawler"
+            android:text="Enter registered email"
+            android:textColor="#FF0028"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/emailResetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/text_bg"
+            android:fontFamily="@font/brawler"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="#FF0028"
+            android:textColorHint="#FF0028"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ResetPasswordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/brawler"
+            android:padding="10dp"
+            android:text="Reset password"
+            android:textColor="#FF0028"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Go Back"
+            android:layout_marginTop="20dp"
+            android:textColor="#FF0028"
+            android:textSize="20sp"
+            android:fontFamily="@font/brawler"/>
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

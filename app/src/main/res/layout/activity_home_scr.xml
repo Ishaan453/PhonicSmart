@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffefd5"
+    tools:context=".Home_scr">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/LogOutBtnTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_bg"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_scr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FF6347"
+                    android:gravity="center"
+                    android:text="Letter Sound"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="Hear sounds of all letters of group 1 to group 7"
+                    android:textColor="#ff355e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/home_scr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FF6347"
+                    android:gravity="center"
+                    android:text="Tricky Words"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="Hear sounds of all 72 tricket words I , The etc."
+                    android:textColor="#ff355e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/home_scr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FF6347"
+                    android:gravity="center"
+                    android:text="Sentences"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="Learn to read and write sentences"
+                    android:textColor="#ff355e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/home_scr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FF6347"
+                    android:gravity="center"
+                    android:text="Quiz"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="Do quizes and show off your score"
+                    android:textColor="#ff355e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/home_scr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FF6347"
+                    android:gravity="center"
+                    android:text="Free Drawing"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="Draw letters pictures and show your teacher for feedback"
+                    android:textColor="#ff355e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/LogOutBtnBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_bg"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:padding="5dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

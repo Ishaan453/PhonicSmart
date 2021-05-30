@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6495ed"
+    tools:context=".LetterSoundGrps">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_scr"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group 1"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:background="#ff0000"
+                    android:fontFamily="@font/brawler"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/A_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:background="#b0e0e6"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Aa"
+                        android:textColor="#0000cd"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/I_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Ii"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                    <TextView
+                        android:id="@+id/N_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Nn"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/P_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Pp"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/S_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Ss"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/T_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Tt"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_scr"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff0000"
+                    android:fontFamily="@font/brawler"
+                    android:gravity="center"
+                    android:text="Group 2"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/C_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:background="#b0e0e6"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Cc"
+                        android:textColor="#0000cd"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/K_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Kk"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                    <TextView
+                        android:id="@+id/E_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Ee"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/H_sound"
+                        android:layout_width="83dp"
+                        android:layout_height="100dp"
+                        android:text="Hh"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/R_sound"
+                        android:layout_width="83dp"
+                        android:layout_height="100dp"
+                        android:text="Rr"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/M_sound"
+                        android:layout_width="83dp"
+                        android:layout_height="100dp"
+                        android:text="Mm"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/D_sound"
+                        android:layout_width="83dp"
+                        android:layout_height="100dp"
+                        android:text="Dd"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_scr"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group 3"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:background="#ff0000"
+                    android:fontFamily="@font/brawler"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/G_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:background="#b0e0e6"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Gg"
+                        android:textColor="#0000cd"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/O_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Oo"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                    <TextView
+                        android:id="@+id/U_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Uu"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/L_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Ll"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/F_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Ff"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/B_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Bb"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_scr"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group 4"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:background="#ff0000"
+                    android:fontFamily="@font/brawler"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/AI_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:background="#b0e0e6"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="ai"
+                        android:textColor="#0000cd"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/EE_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="ee"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                    <TextView
+                        android:id="@+id/IE_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="ie"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/OR_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="or"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/J_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Jj"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/OA_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="oa"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_scr"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Group 5"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:background="#ff0000"
+                    android:fontFamily="@font/brawler"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/OO_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#b0e0e6">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"
+                            android:text="oo"
+                            android:fontFamily="@font/noto_sans"
+                            android:gravity="center"
+                            android:textSize="40sp"
+                            android:textColor="#0000cd" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Long"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/oo_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#b0e0e6">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"
+                            android:text="oo"
+                            android:fontFamily="@font/noto_sans"
+                            android:gravity="center"
+                            android:textSize="40sp"
+                            android:textColor="#0000cd" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Short"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/NG_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="ng"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/Z_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Zz"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/W_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Ww"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/V_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Vv"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_scr"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group 6"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:background="#ff0000"
+                    android:fontFamily="@font/brawler"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/Y_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:background="#b0e0e6"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Yy"
+                        android:textColor="#0000cd"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/X_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="Xx"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                    <TextView
+                        android:id="@+id/CH_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="ch"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="#b0e0e6"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/SH_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="sh"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:layout_marginBottom="5dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/TH_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"
+                            android:text="th"
+                            android:fontFamily="@font/noto_sans"
+                            android:gravity="center"
+                            android:textSize="40sp"
+                            android:textColor="#0000cd"
+                            android:background="#b0e0e6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Voiced"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/th_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="70dp"
+                            android:text="th"
+                            android:fontFamily="@font/noto_sans"
+                            android:gravity="center"
+                            android:textSize="40sp"
+                            android:textColor="#0000cd"
+                            android:background="#b0e0e6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unvoiced"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_scr"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group 7"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:background="#ff0000"
+                    android:fontFamily="@font/brawler"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/QU_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:background="#b0e0e6"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="qu"
+                        android:textColor="#0000cd"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/OU_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="ou"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                    <TextView
+                        android:id="@+id/OI_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="oi"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/UE_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="ue"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/ER_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="er"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/AR_sound"
+                        android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:text="ar"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#0000cd"
+                        android:background="#b0e0e6"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

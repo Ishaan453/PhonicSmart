@@ -74,7 +74,7 @@ public class Home_scr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(user != null) {
-                    Toast.makeText(Home_scr.this, "Coming soon", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Home_scr.this, DrawHomeScreen.class));
                 }
                 else{
                     Toast.makeText(Home_scr.this, "You don't have access, please contact 7798340077", Toast.LENGTH_SHORT).show();

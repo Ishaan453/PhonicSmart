@@ -22,7 +22,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
 
             <TextView
                 android:id="@+id/LogOutBtnTop"
@@ -88,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:gravity="center"
-                    android:text="Hear sounds of all 72 tricket words I , The etc."
+                    android:text="Hear sounds of all 72 tricky words I , The etc."
                     android:textColor="#ff355e"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -175,7 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:gravity="center"
-                    android:text="Draw letters pictures and show your teacher for feedback"
+                    android:text="learn to draw letters by practicing them"
                     android:textColor="#ff355e"
                     android:textSize="20sp"
                     android:textStyle="bold"

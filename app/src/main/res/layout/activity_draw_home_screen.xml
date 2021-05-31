@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ace5ee"
+    tools:context=".DrawHomeScreen">
+
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sassoon_primary"
+                android:text="Choose the letter you want to practice"
+                android:textColor="#ff0000"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/a_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Aa"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/b_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bb"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/c_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cc"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/d_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dd"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/e_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ee"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/f_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ff"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/g_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gg"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/h_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hh"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/i_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ii"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/j_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jj"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/k_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kk"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/l_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ll"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/m_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mm"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="45sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/n_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nn"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/o_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Oo"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/p_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pp"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/q_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qq"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/r_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rr"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/s_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ss"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/t_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tt"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/u_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Uu"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/v_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vv"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/w_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:text="Ww"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="40sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/x_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Xx"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/y_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Yy"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/z_draw"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Zz"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:textColor="#0000cd"
+                    android:background="@drawable/draw_back"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

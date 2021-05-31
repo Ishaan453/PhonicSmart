@@ -9,7 +9,10 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.PhonicSmart">
-        <activity android:name=".ResetPass"/>
+        <activity android:name=".DrawMain"></activity>
+        <activity android:name=".drawGIF" />
+        <activity android:name=".DrawHomeScreen" />
+        <activity android:name=".ResetPass" />
         <activity android:name=".LetterSounds" />
         <activity android:name=".LetterSoundGrps" />
         <activity android:name=".Home_scr" />

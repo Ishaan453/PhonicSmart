@@ -282,7 +282,7 @@ public class DrawHomeScreen extends AppCompatActivity {
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DrawHomeScreen.this, Home_scr.class));
+                finish();
             }
         });
 

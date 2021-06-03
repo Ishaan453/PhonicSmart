@@ -169,9 +169,9 @@
                     android:layout_height="50dp"
                     android:background="#FF6347"
                     android:gravity="center"
-                    android:text="Free Drawing"
+                    android:text="Letter Formation"
                     android:textColor="@color/white"
-                    android:textSize="35sp" />
+                    android:textSize="30sp" />
 
                 <TextView
                     android:layout_width="match_parent"

@@ -47,7 +47,7 @@ public class Home_scr extends AppCompatActivity {
         ll2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home_scr.this, "Coming soon", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Home_scr.this, TrickyWord.class));
             }
         });
 

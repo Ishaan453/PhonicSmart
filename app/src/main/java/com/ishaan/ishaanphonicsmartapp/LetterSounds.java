@@ -11,6 +11,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 public class LetterSounds extends AppCompatActivity {
     TextView heading, soundBtn, word1, word2, word3, word4, word5, word6, song;
     LinearLayout SongPlay;
@@ -19,6 +26,7 @@ public class LetterSounds extends AppCompatActivity {
     MediaPlayer sound;
     MediaPlayer songPlay;
     MediaPlayer words;
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +47,16 @@ public class LetterSounds extends AppCompatActivity {
         Intent i = getIntent();
         String layout;
         layout = i.getStringExtra("ClickedOn?");
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         //For Layouts
         switch (layout) {

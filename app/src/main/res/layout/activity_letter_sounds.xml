@@ -19,29 +19,35 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="30sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="left|center"
                 android:orientation="horizontal"
-                android:gravity="left|center">
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/backBtn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_baseline_arrow_back_24"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
 
                 <TextView
                     android:id="@+id/Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="100dp"
-                    android:text="Aa"
                     android:fontFamily="@font/sassoon_primary"
+                    android:text="Aa"
                     android:textColor="#ff0000"
                     android:textSize="80sp" />
 
@@ -50,71 +56,71 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Click here to hear the sound"
-                android:fontFamily="@font/im_fell_dw_pica"
-                android:textSize="30sp"
                 android:layout_marginTop="20dp"
-                android:textColor="#ffa07a"
+                android:fontFamily="@font/im_fell_dw_pica"
                 android:gravity="center"
-                android:padding="5dp"/>
+                android:padding="5dp"
+                android:text="Click here to hear the sound"
+                android:textColor="#ffa07a"
+                android:textSize="30sp" />
 
 
-        <LinearLayout
-            android:id="@+id/soundBtnLinearLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/hear_sound_bg">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_baseline_speaker_phone_24"/>
-
-            <TextView
-                android:id="@+id/SoundBtn"
+            <LinearLayout
+                android:id="@+id/soundBtnLinearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/sassoon_primary"
-                android:paddingRight="7dp"
-                android:text="Aa"
-                android:textColor="#ffc40c"
-                android:textSize="60sp" />
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hear_sound_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_speaker_phone_24" />
+
+                <TextView
+                    android:id="@+id/SoundBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:paddingRight="7dp"
+                    android:text="Aa"
+                    android:textColor="#ffc40c"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
 
 
             <LinearLayout
                 android:id="@+id/SongPlay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/song_bg">
+                android:background="@drawable/song_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
 
 
                 <TextView
                     android:id="@+id/song"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="/a/ /a/ ants on my arm"
                     android:fontFamily="@font/sassoon_primary"
-                    android:textColor="@color/white"
+                    android:gravity="center"
                     android:paddingLeft="2dp"
-                    android:gravity="center"/>
+                    android:text="/a/ /a/ ants on my arm"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
                 <ImageView
                     android:id="@+id/pic"
                     android:layout_width="100dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/ants_on_my_arm_boy"
-                    android:paddingRight="10dp"/>
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ants_on_my_arm_boy" />
 
             </LinearLayout>
 
@@ -122,105 +128,120 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Here are some words"
-                android:fontFamily="@font/im_fell_dw_pica"
                 android:layout_marginTop="40dp"
-                android:textSize="35sp"
-                android:textColor="#ff9933"/>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="0dp">
-
-            <TextView
-                android:id="@+id/word1"
-                android:fontFamily="@font/sassoon_primary"
-                android:layout_width="130dp"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="ant"
-                android:layout_marginTop="5dp"
-                android:textSize="30sp"
-                android:textColor="#228b22"
-                android:padding="10dp"/>
-
-            <TextView
-                android:id="@+id/word2"
-                android:fontFamily="@font/sassoon_primary"
-                android:layout_width="130dp"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="pan"
-                android:layout_marginTop="5dp"
-                android:textSize="30sp"
-                android:textColor="#228b22"
-                android:padding="10dp"/>
-
-            <TextView
-                android:id="@+id/word3"
-                android:fontFamily="@font/sassoon_primary"
-                android:layout_width="130dp"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="mat"
-                android:layout_marginTop="5dp"
-                android:textSize="30sp"
-                android:textColor="#228b22"
-                android:padding="10dp"/>
-
-        </LinearLayout>
+                android:fontFamily="@font/im_fell_dw_pica"
+                android:text="Here are some words"
+                android:textColor="#ff9933"
+                android:textSize="35sp" />
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
                 android:gravity="center"
-                android:layout_marginTop="0dp">
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/word1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="ant"
+                    android:textColor="#228b22"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/word2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="pan"
+                    android:textColor="#228b22"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/word3"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="mat"
+                    android:textColor="#228b22"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
 
                 <TextView
                     android:id="@+id/word4"
                     android:layout_width="130dp"
-                    android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="man"
-                    android:fontFamily="@font/sassoon_primary"
                     android:layout_marginTop="5dp"
-                    android:textSize="30sp"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="man"
                     android:textColor="#228b22"
-                    android:padding="10dp"/>
+                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/word5"
                     android:layout_width="130dp"
-                    android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="cat"
-                    android:fontFamily="@font/sassoon_primary"
                     android:layout_marginTop="5dp"
-                    android:textSize="30sp"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="cat"
                     android:textColor="#228b22"
-                    android:padding="10dp"/>
+                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/word6"
                     android:layout_width="130dp"
-                    android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="can"
-                    android:fontFamily="@font/sassoon_primary"
                     android:layout_marginTop="5dp"
-                    android:textSize="30sp"
+                    android:fontFamily="@font/sassoon_primary"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="can"
                     android:textColor="#228b22"
-                    android:padding="10dp"/>
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
 
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3">
+
+    </com.google.android.gms.ads.AdView>
 </androidx.constraintlayout.widget.ConstraintLayout>

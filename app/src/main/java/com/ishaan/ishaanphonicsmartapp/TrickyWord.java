@@ -2,11 +2,13 @@ package com.ishaan.ishaanphonicsmartapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
@@ -20,6 +22,8 @@ public class TrickyWord extends AppCompatActivity {
     MediaPlayer tricky_sound;
     ImageView backBtn;
     private AdView mAdView;
+    TextView level1, level2, level3, level4, level5, level6;
+    LinearLayout level1ll, level2ll, level3ll, level4ll, level5ll, level6ll;
 
     //Tricky grp 1
     TextView tricky_i, tricky_the, tricky_he, tricky_she, tricky_we, tricky_me, tricky_be, tricky_was, tricky_to, tricky_do, tricky_are, tricky_all;
@@ -45,6 +49,23 @@ public class TrickyWord extends AppCompatActivity {
         setContentView(R.layout.activity_tricky_word);
 
         backBtn = findViewById(R.id.backBtn);
+        level1 = findViewById(R.id.level1);
+        level1ll = findViewById(R.id.level1ll);
+
+        level2 = findViewById(R.id.level2);
+        level2ll = findViewById(R.id.level2ll);
+
+        level3 = findViewById(R.id.level3);
+        level3ll = findViewById(R.id.level3ll);
+
+        level4 = findViewById(R.id.level4);
+        level4ll = findViewById(R.id.level4ll);
+
+        level5 = findViewById(R.id.level5);
+        level5ll = findViewById(R.id.level5ll);
+
+        level6 = findViewById(R.id.level6);
+        level6ll = findViewById(R.id.level6ll);
 
         //Tricky grp 1
 
@@ -141,6 +162,252 @@ public class TrickyWord extends AppCompatActivity {
         mAdView = findViewById(R.id.TrickyAdView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        LinearLayout.LayoutParams ll1Params = (LinearLayout.LayoutParams) level1ll.getLayoutParams();
+        ll1Params.height=0;
+        level1ll.setLayoutParams(ll1Params);
+
+        LinearLayout.LayoutParams ll2Params = (LinearLayout.LayoutParams) level2ll.getLayoutParams();
+        ll2Params.height=0;
+        level1ll.setLayoutParams(ll2Params);
+
+        LinearLayout.LayoutParams ll3Params = (LinearLayout.LayoutParams) level3ll.getLayoutParams();
+        ll3Params.height=0;
+        level1ll.setLayoutParams(ll3Params);
+
+        LinearLayout.LayoutParams ll4Params = (LinearLayout.LayoutParams) level4ll.getLayoutParams();
+        ll4Params.height=0;
+        level1ll.setLayoutParams(ll4Params);
+
+        LinearLayout.LayoutParams ll5Params = (LinearLayout.LayoutParams) level5ll.getLayoutParams();
+        ll5Params.height=0;
+        level1ll.setLayoutParams(ll5Params);
+
+        LinearLayout.LayoutParams ll6Params = (LinearLayout.LayoutParams) level6ll.getLayoutParams();
+        ll6Params.height=0;
+        level1ll.setLayoutParams(ll6Params);
+
+        level1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ll1Params.height = 780;
+                ll2Params.height = 0;
+                ll3Params.height = 0;
+                ll4Params.height = 0;
+                ll5Params.height = 0;
+                ll6Params.height = 0;
+
+                level1ll.setLayoutParams(ll1Params);
+                level2ll.setLayoutParams(ll2Params);
+                level3ll.setLayoutParams(ll3Params);
+                level4ll.setLayoutParams(ll4Params);
+                level5ll.setLayoutParams(ll5Params);
+                level6ll.setLayoutParams(ll6Params);
+
+                Drawable bgll1 = getResources().getDrawable(R.drawable.tricky_group_back_level_on_1);
+                level1.setBackground(bgll1);
+
+                Drawable bgll2 = getResources().getDrawable(R.drawable.tricky_group_back_level_2);
+                level2.setBackground(bgll2);
+
+                Drawable bgll3 = getResources().getDrawable(R.drawable.tricky_group_back_level_3);
+                level3.setBackground(bgll3);
+
+                Drawable bgll4 = getResources().getDrawable(R.drawable.tricky_group_back_level_4);
+                level4.setBackground(bgll4);
+
+                Drawable bgll5 = getResources().getDrawable(R.drawable.tricky_group_back_level_5);
+                level5.setBackground(bgll5);
+
+                Drawable bgll6 = getResources().getDrawable(R.drawable.tricky_group_back_level_6);
+                level6.setBackground(bgll6);
+            }
+        });
+
+        level2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ll1Params.height = 0;
+                ll2Params.height = 780;
+                ll3Params.height = 0;
+                ll4Params.height = 0;
+                ll5Params.height = 0;
+                ll6Params.height = 0;
+
+                level1ll.setLayoutParams(ll1Params);
+                level2ll.setLayoutParams(ll2Params);
+                level3ll.setLayoutParams(ll3Params);
+                level4ll.setLayoutParams(ll4Params);
+                level5ll.setLayoutParams(ll5Params);
+                level6ll.setLayoutParams(ll6Params);
+
+                Drawable bgll1 = getResources().getDrawable(R.drawable.tricky_group_back_level_1);
+                level1.setBackground(bgll1);
+
+                Drawable bgll2 = getResources().getDrawable(R.drawable.tricky_group_back_level_on_2);
+                level2.setBackground(bgll2);
+
+                Drawable bgll3 = getResources().getDrawable(R.drawable.tricky_group_back_level_3);
+                level3.setBackground(bgll3);
+
+                Drawable bgll4 = getResources().getDrawable(R.drawable.tricky_group_back_level_4);
+                level4.setBackground(bgll4);
+
+                Drawable bgll5 = getResources().getDrawable(R.drawable.tricky_group_back_level_5);
+                level5.setBackground(bgll5);
+
+                Drawable bgll6 = getResources().getDrawable(R.drawable.tricky_group_back_level_6);
+                level6.setBackground(bgll6);
+            }
+        });
+
+        level3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ll1Params.height = 0;
+                ll2Params.height = 0;
+                ll3Params.height = 780;
+                ll4Params.height = 0;
+                ll5Params.height = 0;
+                ll6Params.height = 0;
+
+                level1ll.setLayoutParams(ll1Params);
+                level2ll.setLayoutParams(ll2Params);
+                level3ll.setLayoutParams(ll3Params);
+                level4ll.setLayoutParams(ll4Params);
+                level5ll.setLayoutParams(ll5Params);
+                level6ll.setLayoutParams(ll6Params);
+
+                Drawable bgll1 = getResources().getDrawable(R.drawable.tricky_group_back_level_1);
+                level1.setBackground(bgll1);
+
+                Drawable bgll2 = getResources().getDrawable(R.drawable.tricky_group_back_level_2);
+                level2.setBackground(bgll2);
+
+                Drawable bgll3 = getResources().getDrawable(R.drawable.tricky_group_back_level_on_3);
+                level3.setBackground(bgll3);
+
+                Drawable bgll4 = getResources().getDrawable(R.drawable.tricky_group_back_level_4);
+                level4.setBackground(bgll4);
+
+                Drawable bgll5 = getResources().getDrawable(R.drawable.tricky_group_back_level_5);
+                level5.setBackground(bgll5);
+
+                Drawable bgll6 = getResources().getDrawable(R.drawable.tricky_group_back_level_6);
+                level6.setBackground(bgll6);
+            }
+        });
+
+        level4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ll1Params.height = 0;
+                ll2Params.height = 0;
+                ll3Params.height = 0;
+                ll4Params.height = 780;
+                ll5Params.height = 0;
+                ll6Params.height = 0;
+
+                level1ll.setLayoutParams(ll1Params);
+                level2ll.setLayoutParams(ll2Params);
+                level3ll.setLayoutParams(ll3Params);
+                level4ll.setLayoutParams(ll4Params);
+                level5ll.setLayoutParams(ll5Params);
+                level6ll.setLayoutParams(ll6Params);
+
+                Drawable bgll1 = getResources().getDrawable(R.drawable.tricky_group_back_level_1);
+                level1.setBackground(bgll1);
+
+                Drawable bgll2 = getResources().getDrawable(R.drawable.tricky_group_back_level_2);
+                level2.setBackground(bgll2);
+
+                Drawable bgll3 = getResources().getDrawable(R.drawable.tricky_group_back_level_3);
+                level3.setBackground(bgll3);
+
+                Drawable bgll4 = getResources().getDrawable(R.drawable.tricky_group_back_level_on_4);
+                level4.setBackground(bgll4);
+
+                Drawable bgll5 = getResources().getDrawable(R.drawable.tricky_group_back_level_5);
+                level5.setBackground(bgll5);
+
+                Drawable bgll6 = getResources().getDrawable(R.drawable.tricky_group_back_level_6);
+                level6.setBackground(bgll6);
+            }
+        });
+
+        level5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ll1Params.height = 0;
+                ll2Params.height = 0;
+                ll3Params.height = 0;
+                ll4Params.height = 0;
+                ll5Params.height = 780;
+                ll6Params.height = 0;
+
+                level1ll.setLayoutParams(ll1Params);
+                level2ll.setLayoutParams(ll2Params);
+                level3ll.setLayoutParams(ll3Params);
+                level4ll.setLayoutParams(ll4Params);
+                level5ll.setLayoutParams(ll5Params);
+                level6ll.setLayoutParams(ll6Params);
+
+                Drawable bgll1 = getResources().getDrawable(R.drawable.tricky_group_back_level_1);
+                level1.setBackground(bgll1);
+
+                Drawable bgll2 = getResources().getDrawable(R.drawable.tricky_group_back_level_2);
+                level2.setBackground(bgll2);
+
+                Drawable bgll3 = getResources().getDrawable(R.drawable.tricky_group_back_level_3);
+                level3.setBackground(bgll3);
+
+                Drawable bgll4 = getResources().getDrawable(R.drawable.tricky_group_back_level_4);
+                level4.setBackground(bgll4);
+
+                Drawable bgll5 = getResources().getDrawable(R.drawable.tricky_group_back_level_on_5);
+                level5.setBackground(bgll5);
+
+                Drawable bgll6 = getResources().getDrawable(R.drawable.tricky_group_back_level_6);
+                level6.setBackground(bgll6);
+            }
+        });
+
+        level6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ll1Params.height = 0;
+                ll2Params.height = 0;
+                ll3Params.height = 0;
+                ll4Params.height = 0;
+                ll5Params.height = 0;
+                ll6Params.height = 780;
+
+                level1ll.setLayoutParams(ll1Params);
+                level2ll.setLayoutParams(ll2Params);
+                level3ll.setLayoutParams(ll3Params);
+                level4ll.setLayoutParams(ll4Params);
+                level5ll.setLayoutParams(ll5Params);
+                level6ll.setLayoutParams(ll6Params);
+
+                Drawable bgll1 = getResources().getDrawable(R.drawable.tricky_group_back_level_1);
+                level1.setBackground(bgll1);
+
+                Drawable bgll2 = getResources().getDrawable(R.drawable.tricky_group_back_level_2);
+                level2.setBackground(bgll2);
+
+                Drawable bgll3 = getResources().getDrawable(R.drawable.tricky_group_back_level_3);
+                level3.setBackground(bgll3);
+
+                Drawable bgll4 = getResources().getDrawable(R.drawable.tricky_group_back_level_4);
+                level4.setBackground(bgll4);
+
+                Drawable bgll5 = getResources().getDrawable(R.drawable.tricky_group_back_level_5);
+                level5.setBackground(bgll5);
+
+                Drawable bgll6 = getResources().getDrawable(R.drawable.tricky_group_back_level_on_6);
+                level6.setBackground(bgll6);
+            }
+        });
 
 
         //Back Button

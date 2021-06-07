@@ -26,7 +26,7 @@ public class LetterSounds extends AppCompatActivity {
     MediaPlayer sound;
     MediaPlayer songPlay;
     MediaPlayer words;
-    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +54,7 @@ public class LetterSounds extends AppCompatActivity {
             }
         });
 
-        mAdView = findViewById(R.id.adView);
+        AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 

@@ -20,6 +20,11 @@ public class LetterSoundGrps extends AppCompatActivity {
     LinearLayout OO_sound, oo_sound, TH_sound, th_sound;
     TextView NG_sound, Z_sound, W_sound, V_sound, Y_sound, X_sound, CH_sound, SH_sound, QU_sound, OU_sound, OI_sound, UE_sound, ER_sound, AR_sound;
 
+    //Alt grp 1
+    TextView Alt_OA_sound, Alt_S_sound, Alt_F_sound, Alt_AI_sound, Alt_J_sound, Alt_IE_sound;
+
+    //Alt grp 2
+    TextView Alt_EE_sound, Alt_OR_sound, Alt_OU_sound, alt_OI_sound, Alt_UE_sound, Alt_ER_sound;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +85,23 @@ public class LetterSoundGrps extends AppCompatActivity {
         UE_sound = findViewById(R.id.UE_sound);
         ER_sound = findViewById(R.id.ER_sound);
         AR_sound = findViewById(R.id.AR_sound);
+
+
+        //Alt grp 1
+        Alt_OA_sound = findViewById(R.id.Alt_OA_sound);
+        Alt_S_sound = findViewById(R.id.Alt_S_sound);
+        Alt_F_sound = findViewById(R.id.Alt_F_sound);
+        Alt_AI_sound = findViewById(R.id.Alt_AI_sound);
+        Alt_J_sound = findViewById(R.id.Alt_J_sound);
+        Alt_IE_sound = findViewById(R.id.Alt_IE_sound);
+
+        //Alt grp 2
+        Alt_EE_sound = findViewById(R.id.Alt_EE_sound);
+        Alt_OR_sound = findViewById(R.id.Alt_OR_sound);
+        Alt_OU_sound = findViewById(R.id.Alt_OU_sound);
+        alt_OI_sound = findViewById(R.id.Alt_OI_sound);
+        Alt_UE_sound = findViewById(R.id.Alt_UE_sound);
+        Alt_ER_sound = findViewById(R.id.Alt_ER_sound);
 
 
 
@@ -491,6 +513,114 @@ public class LetterSoundGrps extends AppCompatActivity {
                 Intent intent = new Intent(LetterSoundGrps.this, LetterSounds.class);
                 intent.putExtra("ClickedOn?", "ar_sound");
                 startActivity(intent);
+            }
+        });
+
+        Alt_OA_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_OA");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_S_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_S");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_F_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_F");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_UE_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_UE");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_J_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_J");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_IE_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_IE");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_EE_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_EE");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_OR_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_OR");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_OU_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_OU");
+                startActivity(AltInt);
+            }
+        });
+
+        alt_OI_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_OI");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_UE_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_UE");
+                startActivity(AltInt);
+            }
+        });
+
+        Alt_ER_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
+                AltInt.putExtra("ClickedOn?", "Alt_ER");
+                startActivity(AltInt);
             }
         });
     }

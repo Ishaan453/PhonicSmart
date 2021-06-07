@@ -218,7 +218,7 @@ public class LetterSounds extends AppCompatActivity {
             case "e_sound": {
                 heading.setText("Ee");
                 soundBtn.setText("Ee");
-                song.setText(" Eggs in the pan /e/-/e/-/e/ \n Eggs in the pan /e/-/e/-/e/ \n Eggs in the pan /e/-/e/-/e/ \n Crack the eggs like this");
+                song.setText(" Eggs in the pan /e/-/e/-/e/. \n Eggs in the pan /e/-/e/-/e/. \n Eggs in the pan /e/-/e/-/e/. \n Crack the eggs like this.../e/!");
                 Drawable myDrawable2 = getResources().getDrawable(R.drawable.eeee_song_pic);
                 pic.setImageDrawable(myDrawable2);
                 word1.setText("egg");

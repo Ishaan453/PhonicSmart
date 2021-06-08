@@ -873,13 +873,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="40sp"
+                android:gravity="center"
+                android:background="@drawable/alt_bg"
                 android:text="Alternatives"
-                android:textColor="#ff0000"
+                android:textColor="@color/white"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginRight="30dp"
-                android:textStyle="bold"/>
+                android:layout_marginRight="30dp" />
 
             <LinearLayout
                 android:id="@+id/Alt_grp_1"

@@ -543,11 +543,11 @@ public class LetterSoundGrps extends AppCompatActivity {
             }
         });
 
-        Alt_UE_sound.setOnClickListener(new View.OnClickListener() {
+        Alt_AI_sound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent AltInt = new Intent(LetterSoundGrps.this, AlternativeSounds.class);
-                AltInt.putExtra("ClickedOn?", "Alt_UE");
+                AltInt.putExtra("ClickedOn?", "Alt_AI");
                 startActivity(AltInt);
             }
         });

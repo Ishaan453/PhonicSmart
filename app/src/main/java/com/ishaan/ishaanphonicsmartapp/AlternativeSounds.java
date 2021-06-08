@@ -341,6 +341,256 @@ public class AlternativeSounds extends AppCompatActivity {
                 word38.setText("kite");
                 break;
             }
+
+            case "Alt_EE":{
+                Alt_Heading.setText("ee");
+                Alt_description.setText("Sometimes, 'y' in the end, 'e_e', and sometimes, 'ea', sounds same like 'ee'");
+                Element_heading1.setText("ee");
+                Element_heading2.setText("ea");
+                Element_heading3.setText("y");
+                Element_heading4.setText("e_e");
+
+                word11.setText("bee");
+                word12.setText("knee");
+                word13.setText("sleep");
+                word14.setText("cheek");
+                word15.setText("cheese");
+                word16.setText("sweet");
+                word17.setText("deep");
+                word18.setText("green");
+
+                word21.setText("heat");
+                word22.setText("meat");
+                word23.setText("seat");
+                word24.setText("read");
+                word25.setText("treat");
+                word26.setText("leaf");
+                word27.setText("eat");
+                word28.setText("meal");
+
+                word31.setText("baby");
+                word32.setText("tiny");
+                word33.setText("ruby");
+                word34.setText("very");
+                word35.setText("candy");
+                word36.setText("sunny");
+                word37.setText("carry");
+                word38.setText("jolly");
+
+                word41.setText("theme");
+                word42.setText("Steve");
+                word43.setText("scene");
+                word44.setText("even");
+                word45.setText("these");
+                word46.setText("delete");
+                word47.setText("gene");
+                word48.setText("extreme");
+                break;
+            }
+
+            case "Alt_OR":{
+                Alt_Heading.setText("or");
+                Alt_description.setText("'au', 'al' and 'aw', sounds same like 'or'");
+                Element_heading1.setText("or");
+                Element_heading2.setText("au");
+                Element_heading3.setText("al");
+                Element_heading4.setText("aw");
+
+                word11.setText("cork");
+                word12.setText("corn");
+                word13.setText("born");
+                word14.setText("port");
+                word15.setText("cord");
+                word16.setText("horn");
+                word17.setText("glory");
+                word18.setText("worn");
+
+                word21.setText("audit");
+                word22.setText("haul");
+                word23.setText("August");
+                word24.setText("audio");
+                word25.setText("pause");
+                word26.setText("clause");
+                word27.setText("applaud");
+                word28.setText("author");
+
+                word31.setText("ball");
+                word32.setText("all");
+                word33.setText("wall");
+                word34.setText("chalk");
+                word35.setText("talk");
+                word36.setText("salt");
+                word37.setText("tall");
+                word38.setText("stalk");
+
+                word41.setText("paw");
+                word42.setText("raw");
+                word43.setText("flaw");
+                word44.setText("claw");
+                word45.setText("yawn");
+                word46.setText("lawn");
+                word47.setText("drawn");
+                word48.setText("spawn");
+                break;
+            }
+
+            case "Alt_OU":{
+                LinearLayout.LayoutParams LL3 = (LinearLayout.LayoutParams) Layout_3.getLayoutParams();
+                LinearLayout.LayoutParams LL4 = (LinearLayout.LayoutParams) Layout_4.getLayoutParams();
+                LL3.height = 0;
+                LL3.width = 0;
+                LL4.height = 0;
+                LL4.width = 0;
+                Layout_3.setLayoutParams(LL3);
+                Layout_4.setLayoutParams(LL4);
+
+                Alt_Heading.setText("ou");
+                Alt_description.setText("'ow' sounds like 'ou'");
+                Element_heading1.setText("ou");
+                Element_heading2.setText("ow");
+
+                word11.setText("pouch");
+                word12.setText("mouse");
+                word13.setText("couch");
+                word14.setText("pound");
+                word15.setText("mouth");
+                word16.setText("foul");
+                word17.setText("cloud");
+                word18.setText("shout");
+
+                word21.setText("bow");
+                word22.setText("row");
+                word23.setText("snow");
+                word24.setText("below");
+                word25.setText("pillow");
+                word26.setText("flow");
+                word27.setText("glow");
+                word28.setText("show");
+                break;
+            }
+
+            case "Alt_OI":{
+                LinearLayout.LayoutParams LL3 = (LinearLayout.LayoutParams) Layout_3.getLayoutParams();
+                LinearLayout.LayoutParams LL4 = (LinearLayout.LayoutParams) Layout_4.getLayoutParams();
+                LL3.height = 0;
+                LL3.width = 0;
+                LL4.height = 0;
+                LL4.width = 0;
+                Layout_3.setLayoutParams(LL3);
+                Layout_4.setLayoutParams(LL4);
+
+                Alt_Heading.setText("oi");
+                Alt_description.setText("'oy' sounds like 'oi'");
+                Element_heading1.setText("oi");
+                Element_heading2.setText("oy");
+
+                word11.setText("oil");
+                word12.setText("boil");
+                word13.setText("point");
+                word14.setText("coin");
+                word15.setText("join");
+                word16.setText("spoil");
+                word17.setText("soil");
+                word18.setText("joint");
+
+                word21.setText("toy");
+                word22.setText("boy");
+                word23.setText("annoy");
+                word24.setText("joy");
+                word25.setText("enjoy");
+                word26.setText("loyal");
+                word27.setText("deploy");
+                word28.setText("cowboy");
+                break;
+            }
+
+            case "Alt_UE":{
+                LinearLayout.LayoutParams LL3 = (LinearLayout.LayoutParams) Layout_3.getLayoutParams();
+                LinearLayout.LayoutParams LL4 = (LinearLayout.LayoutParams) Layout_4.getLayoutParams();
+                LL3.width = 10000;
+                LL4.width = 0;
+                LL4.height = 0;
+                Layout_3.setLayoutParams(LL3);
+                Layout_4.setLayoutParams(LL4);
+
+                Alt_Heading.setText("ue");
+                Alt_description.setText("'ew' and 'u_e' sounds same like 'ue'");
+                Element_heading1.setText("ue");
+                Element_heading2.setText("ew");
+                Element_heading3.setText("u_e");
+
+                word11.setText("true");
+                word12.setText("clue");
+                word13.setText("blue");
+                word14.setText("cruel");
+                word15.setText("value");
+                word16.setText("issue");
+                word17.setText("fuel");
+                word18.setText("argue");
+
+                word21.setText("blew");
+                word22.setText("flew");
+                word23.setText("threw");
+                word24.setText("new");
+                word25.setText("stew");
+                word26.setText("grew");
+                word27.setText("nephew");
+                word28.setText("cashew");
+
+                word31.setText("tune");
+                word32.setText("tube");
+                word33.setText("use");
+                word34.setText("fume");
+                word35.setText("cute");
+                word36.setText("flute");
+                word37.setText("cube");
+                word38.setText("mule");
+                break;
+            }
+
+            case "Alt_ER":{
+                LinearLayout.LayoutParams LL3 = (LinearLayout.LayoutParams) Layout_3.getLayoutParams();
+                LinearLayout.LayoutParams LL4 = (LinearLayout.LayoutParams) Layout_4.getLayoutParams();
+                LL3.width = 10000;
+                LL4.width = 0;
+                LL4.height = 0;
+                Layout_3.setLayoutParams(LL3);
+                Layout_4.setLayoutParams(LL4);
+
+                Alt_Heading.setText("er");
+                Alt_description.setText("'ir' and 'ur' sounds same like 'er'");
+                Element_heading1.setText("ir");
+                Element_heading2.setText("ur");
+                Element_heading3.setText("er");
+
+                word11.setText("first");
+                word12.setText("shirt");
+                word13.setText("bird");
+                word14.setText("skirt");
+                word15.setText("third");
+                word16.setText("circus");
+                word17.setText("whirl");
+                word18.setText("girl");
+
+                word21.setText("hurt");
+                word22.setText("nurse");
+                word23.setText("purse");
+                word24.setText("turtle");
+                word25.setText("purple");
+                word26.setText("burn");
+                word27.setText("surf");
+                word28.setText("burger");
+
+                word31.setText("her");
+                word32.setText("clerk");
+                word33.setText("tiger");
+                word34.setText("paper");
+                word35.setText("spider");
+                word36.setText("after");
+                word37.setText("mother");
+                word38.setText("fern");
+                break;
+            }
         }
     }
 }

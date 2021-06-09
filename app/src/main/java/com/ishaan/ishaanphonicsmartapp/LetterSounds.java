@@ -1813,72 +1813,249 @@ public class LetterSounds extends AppCompatActivity {
 
                     //Group 1
                     case "a_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.ant_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.ant_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "i_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.ink_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_i);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.ink_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "n_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.nap_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_p);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.nap_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "p_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.pan_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_p);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.pan_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "s_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.snap_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_s);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_p);
+                                                sound.start();
+
+                                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        sound.release();
+                                                        words = MediaPlayer.create(LetterSounds.this, R.raw.snap_sound);
+                                                        words.start();
+
+                                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                            @Override
+                                                            public void onCompletion(MediaPlayer mp) {
+                                                                words.release();
+                                                            }
+                                                        });
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "t_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.bat_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_b);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.bat_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
@@ -1887,84 +2064,271 @@ public class LetterSounds extends AppCompatActivity {
 
                     //Group 2
                     case "c_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.cat_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.cat_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "k_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.kite_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ie);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.kite_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "m_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.mat_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_m);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.mat_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "d_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.den_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_d);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_e);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.den_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "e_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.egg_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_e);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_g);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.egg_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                words.release();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "h_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.hat_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_h);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.hat_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "r_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.rat_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_r);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.rat_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
@@ -1973,72 +2337,240 @@ public class LetterSounds extends AppCompatActivity {
 
                     //Group 3
                     case "b_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.bed_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_b);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_e);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_d);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.bed_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "f_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.fish_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_f);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_i);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sh_sound);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.fish_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "g_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.gap_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_g);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_p);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.gap_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "l_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.log_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_l);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_o);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_g);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.log_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "o_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.dog_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_d);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_o);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_g);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.dog_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "u_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.mud_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_m);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_u);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_d);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.mud_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
@@ -2047,72 +2579,213 @@ public class LetterSounds extends AppCompatActivity {
 
                     //Group 4
                     case "ai_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.pain_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_p);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ai);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.pain_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "ee_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.bee_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_b);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ee);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.bee_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                words.release();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "ie_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.tie_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ie);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.tie_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                words.release();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "or_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.word_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.w_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_or);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_d);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.word_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "j_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.jam_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_j);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_m);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.jam_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "oa_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.oak_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_oa);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.oak_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                words.release();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
@@ -2120,72 +2793,231 @@ public class LetterSounds extends AppCompatActivity {
 
                     //Group 5
                     case "OO_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.moon_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_m);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.long_oo_sound);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.moon_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "oo_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.cook_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.short_oo_sound);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.cook_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "ng_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.king_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_i);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.ng_sound);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.king_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "z_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.zoo_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.z_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.long_oo_sound);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.zoo_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                words.release();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "w_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.word_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.w_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_or);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_d);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.word_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "v_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.veg_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.v_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_e);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_j);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.veg_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
@@ -2193,72 +3025,240 @@ public class LetterSounds extends AppCompatActivity {
 
                     //Group 6
                     case "y_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.york_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.y_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_or);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.york_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "x_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.fox_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_f);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_o);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.x_sound);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.fox_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "ch_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.chain_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.ch_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_ai);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.chain_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "sh_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.shut_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sh_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_u);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.shut_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "TH_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.that_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.voiced_th_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_a);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.that_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "th_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.thin_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.unvoiced_th_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_i);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.thin_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
@@ -2266,72 +3266,215 @@ public class LetterSounds extends AppCompatActivity {
 
                     //Group 7
                     case "qu_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.quiz_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.qu_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_i);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.z_sound);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.quiz_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "ou_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.out_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.ou_sound);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_t);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.out_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                words.release();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "oi_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.join_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_j);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.oi_sound);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_n);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.join_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "ue_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.clue_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_ck);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.sound_l);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        sound = MediaPlayer.create(LetterSounds.this, R.raw.ue_sound);
+                                        sound.start();
+
+                                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                sound.release();
+                                                words = MediaPlayer.create(LetterSounds.this, R.raw.clue_sound);
+                                                words.start();
+
+                                                words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        words.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "er_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.her_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_h);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.er_sound);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.her_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                words.release();
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;
                     }
 
                     case "ar_sound": {
-                        words = MediaPlayer.create(LetterSounds.this, R.raw.bar_sound);
-                        words.start();
-                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        sound =  MediaPlayer.create(LetterSounds.this, R.raw.sound_b);
+                        sound.start();
+
+                        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
-                                words.release();
+                                sound.release();
+                                sound = MediaPlayer.create(LetterSounds.this, R.raw.ar_sound);
+                                sound.start();
+
+                                sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        sound.release();
+                                        words = MediaPlayer.create(LetterSounds.this, R.raw.bar_sound);
+                                        words.start();
+
+                                        words.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                if(words != null) {
+                                                    words.release();
+                                                }
+                                            }
+                                        });
+                                    }
+                                });
                             }
                         });
                         break;

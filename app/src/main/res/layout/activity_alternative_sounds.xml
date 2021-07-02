@@ -52,11 +52,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="40sp"
-                    android:text="Alternatives of"
                     android:gravity="center"
+                    android:text="Alternatives of"
                     android:textColor="#ff0000"
-                    android:textStyle="bold"/>
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -64,8 +64,8 @@
                 android:id="@+id/Alt_Heading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:fontFamily="@font/sassoon_primary"
+                android:gravity="center"
                 android:text="or"
                 android:textColor="#ff0000"
                 android:textSize="80sp" />
@@ -74,19 +74,19 @@
                 android:id="@+id/Alt_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_margin="10dp"
+                android:gravity="center"
                 android:text="'au' , 'al' and 'aw' sounds same like 'or'."
-                android:textSize="30sp"
                 android:textColor="#9932cc"
-                android:textStyle="bold"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_margin="20dp"
                 android:gravity="center"
-                android:layout_margin="20dp">
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="170dp"
@@ -99,93 +99,156 @@
                         android:id="@+id/Elements_heading1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="or"
                         android:background="#f8b878"
-                        android:textSize="50sp"
                         android:gravity="center"
-                        android:textColor="@color/black"/>
+                        android:text="or"
+                        android:textColor="@color/black"
+                        android:textSize="50sp" />
 
 
                     <TextView
                         android:id="@+id/word11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word11sound"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word12star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word13star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word14star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word15star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word16star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word17star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
 
+                        <TextView
+                            android:id="@+id/word18star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
 
                 </LinearLayout>
@@ -201,93 +264,156 @@
                         android:id="@+id/Elements_heading2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="au"
                         android:background="#f8b878"
-                        android:textSize="50sp"
                         android:gravity="center"
-                        android:textColor="@color/black"/>
+                        android:text="au"
+                        android:textColor="@color/black"
+                        android:textSize="50sp" />
 
 
                     <TextView
                         android:id="@+id/word21"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word21star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word22star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word23"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word23star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word24star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word25"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word25star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word26star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word27"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word27star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word28"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
 
+                        <TextView
+                            android:id="@+id/word28star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
 
                 </LinearLayout>
@@ -298,11 +424,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/Layout3"
@@ -315,93 +441,156 @@
                         android:id="@+id/Elements_heading3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="al"
                         android:background="#f8b878"
-                        android:textSize="50sp"
                         android:gravity="center"
-                        android:textColor="@color/black"/>
+                        android:text="al"
+                        android:textColor="@color/black"
+                        android:textSize="50sp" />
 
 
                     <TextView
                         android:id="@+id/word31"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word31star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word32"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word32star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word33"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word33star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word34"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word34star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word35"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word35star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word36"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word36star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word37"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word37star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word38"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
 
+                        <TextView
+                            android:id="@+id/word38star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
 
                 </LinearLayout>
@@ -417,93 +606,156 @@
                         android:id="@+id/Elements_heading4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="aw"
                         android:background="#f8b878"
-                        android:textSize="50sp"
                         android:gravity="center"
-                        android:textColor="@color/black"/>
+                        android:text="aw"
+                        android:textColor="@color/black"
+                        android:textSize="50sp" />
 
 
                     <TextView
                         android:id="@+id/word41"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word41star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word42"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word42star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word43"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word43star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word44"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word44star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word45"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word45star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word46"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word46star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word47"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/word47star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="            *    *"
+                            android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/word48"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="40sp"
-                        android:textColor="@color/black"
                         android:gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:text="for" />
+                        android:text="for"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
 
+                    <TextView
+                        android:id="@+id/word48star"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:text="            *    *"
+                        android:layout_marginBottom="10dp"/>
 
 
                 </LinearLayout>

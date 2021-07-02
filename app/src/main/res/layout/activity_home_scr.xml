@@ -26,23 +26,9 @@
             android:paddingRight="10dp"
             android:paddingLeft="10dp">
 
-            <TextView
-                android:id="@+id/LogOutBtnTop"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Log Out"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/button_bg"
-                android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:padding="5dp"/>
-
             <LinearLayout
                 android:id="@+id/ll1"
+                android:layout_marginTop="20dp"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/home_scr"
@@ -59,7 +45,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:gravity="center"
                     android:text="Hear sounds of all letters of group 1 to group 7"
                     android:textColor="#ff355e"
@@ -88,7 +74,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:gravity="center"
                     android:text="Hear sounds of all 72 tricky words I , The etc."
                     android:textColor="#ff355e"
@@ -117,7 +103,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:gravity="center"
                     android:text="Learn to read and write sentences"
                     android:textColor="#ff355e"
@@ -146,7 +132,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:gravity="center"
                     android:text="Do quizes and show off your score"
                     android:textColor="#ff355e"
@@ -175,7 +161,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:gravity="center"
                     android:text="learn to draw letters by practicing them"
                     android:textColor="#ff355e"

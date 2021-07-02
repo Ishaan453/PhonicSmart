@@ -190,7 +190,7 @@ public class TrickyWord extends AppCompatActivity {
         level1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ll1Params.height = 780;
+                ll1Params.height = 650;
                 ll2Params.height = 0;
                 ll3Params.height = 0;
                 ll4Params.height = 0;
@@ -228,7 +228,7 @@ public class TrickyWord extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ll1Params.height = 0;
-                ll2Params.height = 780;
+                ll2Params.height = 650;
                 ll3Params.height = 0;
                 ll4Params.height = 0;
                 ll5Params.height = 0;
@@ -266,7 +266,7 @@ public class TrickyWord extends AppCompatActivity {
             public void onClick(View v) {
                 ll1Params.height = 0;
                 ll2Params.height = 0;
-                ll3Params.height = 780;
+                ll3Params.height = 650;
                 ll4Params.height = 0;
                 ll5Params.height = 0;
                 ll6Params.height = 0;
@@ -304,7 +304,7 @@ public class TrickyWord extends AppCompatActivity {
                 ll1Params.height = 0;
                 ll2Params.height = 0;
                 ll3Params.height = 0;
-                ll4Params.height = 780;
+                ll4Params.height = 650;
                 ll5Params.height = 0;
                 ll6Params.height = 0;
 
@@ -342,7 +342,7 @@ public class TrickyWord extends AppCompatActivity {
                 ll2Params.height = 0;
                 ll3Params.height = 0;
                 ll4Params.height = 0;
-                ll5Params.height = 780;
+                ll5Params.height = 650;
                 ll6Params.height = 0;
 
                 level1ll.setLayoutParams(ll1Params);
@@ -380,7 +380,7 @@ public class TrickyWord extends AppCompatActivity {
                 ll3Params.height = 0;
                 ll4Params.height = 0;
                 ll5Params.height = 0;
-                ll6Params.height = 780;
+                ll6Params.height = 650;
 
                 level1ll.setLayoutParams(ll1Params);
                 level2ll.setLayoutParams(ll2Params);

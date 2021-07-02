@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -28,6 +29,7 @@ public class AlternativeSounds extends AppCompatActivity {
 
     //Word set 4
     TextView Element_heading4, word41, word42, word43, word44, word45, word46, word47, word48;
+    TextView star41, star42, star43, star44, star45, star46, star47, star48;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,13 +80,21 @@ public class AlternativeSounds extends AppCompatActivity {
         //Word set 4
         Element_heading4 = findViewById(R.id.Elements_heading4);
         word41 = findViewById(R.id.word41);
+        star41 = findViewById(R.id.word41star);
         word42 = findViewById(R.id.word42);
+        star42 = findViewById(R.id.word42star);
         word43 = findViewById(R.id.word43);
+        star43 = findViewById(R.id.word43star);
         word44 = findViewById(R.id.word44);
+        star44 = findViewById(R.id.word44star);
         word45 = findViewById(R.id.word45);
+        star45 = findViewById(R.id.word45star);
         word46 = findViewById(R.id.word46);
+        star46 = findViewById(R.id.word46star);
         word47 = findViewById(R.id.word47);
+        star47 = findViewById(R.id.word47star);
         word48 = findViewById(R.id.word48);
+        star48 = findViewById(R.id.word48star);
 
 
 
@@ -174,8 +184,8 @@ public class AlternativeSounds extends AppCompatActivity {
 
                 word21.setText("city");
                 word22.setText("face");
-                word23.setText("ice");
-                word24.setText("rice");
+                word23.setText("fence");
+                word24.setText("pencil");
                 word25.setText("voice");
                 word26.setText("mice");
                 word27.setText("space");
@@ -592,5 +602,15 @@ public class AlternativeSounds extends AppCompatActivity {
                 break;
             }
         }
+
+        //For Sounds
+        word11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch(Layout){
+                    case "Alt_OA":
+                }
+            }
+        });
     }
 }

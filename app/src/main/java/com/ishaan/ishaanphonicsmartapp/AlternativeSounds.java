@@ -3,6 +3,7 @@ package com.ishaan.ishaanphonicsmartapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -17,15 +18,19 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 public class AlternativeSounds extends AppCompatActivity {
     TextView Alt_Heading, Alt_description;
     LinearLayout Layout_3, Layout_4;
+    MediaPlayer alt_sound;
 
     //Word set 1
     TextView Element_heading1, word11, word12, word13, word14, word15, word16, word17, word18;
+    TextView star11, star12, star13, star14, star15, star16, star17, star18;
 
     //Word set 2
     TextView Element_heading2, word21, word22, word23, word24, word25, word26, word27, word28;
+    TextView star21, star22, star23, star24, star25, star26, star27, star28;
 
     //Word set 3
     TextView Element_heading3, word31, word32, word33, word34, word35, word36, word37, word38;
+    TextView star31, star32, star33, star34, star35, star36, star37, star38;
 
     //Word set 4
     TextView Element_heading4, word41, word42, word43, word44, word45, word46, word47, word48;
@@ -47,35 +52,59 @@ public class AlternativeSounds extends AppCompatActivity {
         //Word set 1
         Element_heading1 = findViewById(R.id.Elements_heading1);
         word11 = findViewById(R.id.word11);
+        star11 = findViewById(R.id.word11star);
         word12 = findViewById(R.id.word12);
+        star12 = findViewById(R.id.word12star);
         word13 = findViewById(R.id.word13);
+        star13 = findViewById(R.id.word13star);
         word14 = findViewById(R.id.word14);
+        star14 = findViewById(R.id.word14star);
         word15 = findViewById(R.id.word15);
+        star15 = findViewById(R.id.word15star);
         word16 = findViewById(R.id.word16);
+        star16 = findViewById(R.id.word16star);
         word17 = findViewById(R.id.word17);
+        star17 = findViewById(R.id.word17star);
         word18 = findViewById(R.id.word18);
+        star18 = findViewById(R.id.word18star);
 
         //Word set 2
         Element_heading2 = findViewById(R.id.Elements_heading2);
         word21 = findViewById(R.id.word21);
+        star21 = findViewById(R.id.word21star);
         word22 = findViewById(R.id.word22);
+        star22 = findViewById(R.id.word22star);
         word23 = findViewById(R.id.word23);
+        star23 = findViewById(R.id.word23star);
         word24 = findViewById(R.id.word24);
+        star24 = findViewById(R.id.word24star);
         word25 = findViewById(R.id.word25);
+        star25 = findViewById(R.id.word25star);
         word26 = findViewById(R.id.word26);
+        star26 = findViewById(R.id.word26star);
         word27 = findViewById(R.id.word27);
+        star27 = findViewById(R.id.word27star);
         word28 = findViewById(R.id.word28);
+        star28 = findViewById(R.id.word28star);
 
         //Word set 3
         Element_heading3 = findViewById(R.id.Elements_heading3);
         word31 = findViewById(R.id.word31);
+        star31 = findViewById(R.id.word31star);
         word32 = findViewById(R.id.word32);
+        star32 = findViewById(R.id.word32star);
         word33 = findViewById(R.id.word33);
+        star33 = findViewById(R.id.word33star);
         word34 = findViewById(R.id.word34);
+        star34 = findViewById(R.id.word34star);
         word35 = findViewById(R.id.word35);
+        star35 = findViewById(R.id.word35star);
         word36 = findViewById(R.id.word36);
+        star36 = findViewById(R.id.word36star);
         word37 = findViewById(R.id.word37);
+        star37 = findViewById(R.id.word37star);
         word38 = findViewById(R.id.word38);
+        star38 = findViewById(R.id.word38star);
 
         //Word set 4
         Element_heading4 = findViewById(R.id.Elements_heading4);
@@ -108,6 +137,43 @@ public class AlternativeSounds extends AppCompatActivity {
         AdView mAdView = findViewById(R.id.Alt_adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        star11.setText("");
+        star12.setText("");
+        star13.setText("");
+        star14.setText("");
+        star15.setText("");
+        star16.setText("");
+        star17.setText("");
+        star18.setText("");
+
+        star21.setText("");
+        star22.setText("");
+        star23.setText("");
+        star24.setText("");
+        star25.setText("");
+        star26.setText("");
+        star27.setText("");
+        star28.setText("");
+
+        star31.setText("");
+        star32.setText("");
+        star33.setText("");
+        star34.setText("");
+        star35.setText("");
+        star36.setText("");
+        star37.setText("");
+        star38.setText("");
+
+        star41.setText("");
+        star42.setText("");
+        star43.setText("");
+        star44.setText("");
+        star45.setText("");
+        star46.setText("");
+        star47.setText("");
+        star48.setText("");
+
 
 
 
@@ -143,7 +209,7 @@ public class AlternativeSounds extends AppCompatActivity {
                 word23.setText("below");
                 word24.setText("blow");
                 word25.setText("crow");
-                word26.setText("snow");
+                word26.setText("arrow");
                 word27.setText("slow");
                 word28.setText("window");
 
@@ -607,8 +673,41 @@ public class AlternativeSounds extends AppCompatActivity {
         word11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if(alt_sound!=null){
+                    alt_sound.release();
+                }
+
                 switch(Layout){
-                    case "Alt_OA":
+                    case "Alt_OA":{
+                        star11.setText("*    ");
+                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_oa);
+                        alt_sound.start();
+                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                alt_sound.release();
+                                star11.setText("        *");
+                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_ck);
+                                alt_sound.start();
+                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        alt_sound.release();
+                                        star11.setText("");
+                                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.alt_oak);
+                                        alt_sound.start();
+                                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                alt_sound.release();
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+                    }
                 }
             }
         });

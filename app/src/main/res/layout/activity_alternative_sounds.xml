@@ -113,7 +113,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word11star"
@@ -132,7 +132,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word12star"
@@ -151,7 +151,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word13star"
@@ -170,7 +170,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word14star"
@@ -189,7 +189,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word15star"
@@ -208,7 +208,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word16star"
@@ -227,7 +227,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word17star"
@@ -246,7 +246,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word18star"
@@ -286,7 +286,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word21star"
@@ -305,7 +305,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word22star"
@@ -324,7 +324,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word23star"
@@ -343,7 +343,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word24star"
@@ -362,7 +362,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word25star"
@@ -381,7 +381,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word26star"
@@ -400,7 +400,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word27star"
@@ -419,7 +419,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word28star"
@@ -471,7 +471,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word31star"
@@ -490,7 +490,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word32star"
@@ -509,7 +509,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word33star"
@@ -528,7 +528,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word34star"
@@ -547,7 +547,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word35star"
@@ -566,7 +566,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word36star"
@@ -585,7 +585,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word37star"
@@ -604,7 +604,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word38star"
@@ -644,7 +644,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word41star"
@@ -663,7 +663,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word42star"
@@ -682,7 +682,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word43star"
@@ -701,7 +701,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word44star"
@@ -720,7 +720,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word45star"
@@ -739,7 +739,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word46star"
@@ -758,7 +758,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/word47star"
@@ -777,7 +777,7 @@
                         android:gravity="center"
                         android:text="for"
                         android:textColor="@color/black"
-                        android:textSize="40sp" />
+                        android:textSize="30sp" />
 
                     <TextView
                         android:id="@+id/word48star"

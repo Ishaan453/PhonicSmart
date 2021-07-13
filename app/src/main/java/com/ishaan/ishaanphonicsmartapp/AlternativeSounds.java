@@ -246,7 +246,7 @@ public class AlternativeSounds extends AppCompatActivity {
                 word15.setText("spoon");
                 word16.setText("snake");
                 word17.setText("spider");
-                word18.setText("school");
+                word18.setText("span");
 
                 word21.setText("city");
                 word22.setText("face");
@@ -357,7 +357,7 @@ public class AlternativeSounds extends AppCompatActivity {
                 word11.setText("jam");
                 word12.setText("jet");
                 word13.setText("jump");
-                word14.setText("juice");
+                word14.setText("junk");
                 word15.setText("jar");
                 word16.setText("jug");
                 word17.setText("joker");
@@ -389,10 +389,10 @@ public class AlternativeSounds extends AppCompatActivity {
                 Element_heading2.setText("igh");
                 Element_heading3.setText("i_e");
 
-                word11.setText("chief");
+                word11.setText("tie");
                 word12.setText("thief");
-                word13.setText("movie");
-                word14.setText("tie");
+                word13.setText("lied");
+                word14.setText("die");
                 word15.setText("pie");
                 word16.setText("lie");
                 word17.setText("cried");
@@ -680,14 +680,14 @@ public class AlternativeSounds extends AppCompatActivity {
 
                 switch(Layout){
                     case "Alt_OA":{
-                        star11.setText("*    ");
+                        star11.setText(" *    ");
                         alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_oa);
                         alt_sound.start();
                         alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {
                                 alt_sound.release();
-                                star11.setText("        *");
+                                star11.setText("      *");
                                 alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_ck);
                                 alt_sound.start();
                                 alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -707,6 +707,205 @@ public class AlternativeSounds extends AppCompatActivity {
                                 });
                             }
                         });
+                        break;
+                    }
+
+                    case "Alt_S":{
+                        star11.setText("*       ");
+                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_s);
+                        alt_sound.start();
+                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                alt_sound.release();
+                                star11.setText("*");
+                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_u);
+                                alt_sound.start();
+                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        alt_sound.release();
+                                        star11.setText("       *");
+                                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_n);
+                                        alt_sound.start();
+                                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                alt_sound.release();
+                                                star11.setText("");
+                                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.alt_sun);
+                                                alt_sound.start();
+                                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        alt_sound.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
+
+                            }
+                        });
+                        break;
+                    }
+
+                    case "Alt_F":{
+                        star11.setText("*          ");
+                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_f);
+                        alt_sound.start();
+                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                alt_sound.release();
+                                star11.setText("  *     *");
+                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_ai);
+                                alt_sound.start();
+                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        alt_sound.release();
+                                        star11.setText("  *");
+                                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_s);
+                                        alt_sound.start();
+                                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                alt_sound.release();
+                                                star11.setText("");
+                                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.alt_face);
+                                                alt_sound.start();
+                                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        alt_sound.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+
+                        break;
+                    }
+
+                    case "Alt_AI":{
+                        star11.setText("*        ");
+                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_m);
+                        alt_sound.start();
+                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                alt_sound.release();
+                                star11.setText("    *");
+                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_ai);
+                                alt_sound.start();
+                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        alt_sound.release();
+                                        star11.setText("          *");
+                                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_n);
+                                        alt_sound.start();
+                                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                alt_sound.release();
+                                                star11.setText("");
+                                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.alt_main);
+                                                alt_sound.start();
+                                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        alt_sound.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
+
+                            }
+                        });
+
+                        break;
+                    }
+
+                    case "Alt_J":{
+                        star11.setText("*         ");
+                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_j);
+                        alt_sound.start();
+                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                alt_sound.release();
+                                star11.setText("*    ");
+                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_a);
+                                alt_sound.start();
+                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        alt_sound.release();
+                                        star11.setText("    *");
+                                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_m);
+                                        alt_sound.start();
+                                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                alt_sound.release();
+                                                alt_sound.release();
+                                                star11.setText("");
+                                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.alt_jam);
+                                                alt_sound.start();
+                                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                                    @Override
+                                                    public void onCompletion(MediaPlayer mp) {
+                                                        alt_sound.release();
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+
+                        break;
+                    }
+
+                    case "Alt_IE":{
+                        star11.setText("*    ");
+                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_t);
+                        alt_sound.start();
+                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                alt_sound.release();
+                                star11.setText(" *");
+                                alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.sound_ie);
+                                alt_sound.start();
+                                alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        alt_sound.release();
+                                        star11.setText("");
+                                        alt_sound = MediaPlayer.create(AlternativeSounds.this, R.raw.alt_tie);
+                                        alt_sound.start();
+                                        alt_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                            @Override
+                                            public void onCompletion(MediaPlayer mp) {
+                                                alt_sound.release();
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+
+                        break;
                     }
                 }
             }

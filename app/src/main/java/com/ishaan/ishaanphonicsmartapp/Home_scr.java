@@ -15,9 +15,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Home_scr extends AppCompatActivity {
     LinearLayout ll1,ll2,ll3,ll4,ll5;
-    TextView bottom;
-    FirebaseAuth auth;
-    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +25,6 @@ public class Home_scr extends AppCompatActivity {
         ll3 = findViewById(R.id.ll3);
         ll4 = findViewById(R.id.ll4);
         ll5 = findViewById(R.id.ll5);
-        bottom = findViewById(R.id.LogOutBtnBottom);
-        auth = FirebaseAuth.getInstance();
-        user = FirebaseAuth.getInstance().getCurrentUser();
 
 
 
@@ -60,33 +54,14 @@ public class Home_scr extends AppCompatActivity {
         ll4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(user != null) {
-                    Toast.makeText(Home_scr.this, "Coming soon", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(Home_scr.this, "You don't have access, please contact 7798340077", Toast.LENGTH_SHORT).show();
-                }
+                Toast.makeText(Home_scr.this, "Coming soon", Toast.LENGTH_SHORT).show();
             }
         });
 
         ll5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(user != null) {
-                    startActivity(new Intent(Home_scr.this, DrawHomeScreen.class));
-                }
-                else{
-                    Toast.makeText(Home_scr.this, "You don't have access, please contact 7798340077", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        bottom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                auth.signOut();
-                startActivity(new Intent(Home_scr.this, LogInActivity.class));
-                finish();
+                startActivity(new Intent(Home_scr.this, DrawHomeScreen.class));
             }
         });
     }

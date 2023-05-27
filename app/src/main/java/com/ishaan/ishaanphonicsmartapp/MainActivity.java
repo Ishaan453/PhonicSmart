@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(MainActivity.this,LogInActivity.class);
+                Intent mainIntent = new Intent(MainActivity.this,Home_scr.class);
                 startActivity(mainIntent);
                 finish();
             }
